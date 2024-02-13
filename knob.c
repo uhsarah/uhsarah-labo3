@@ -41,7 +41,7 @@ bool build_game(void)
     }
 
     init_cmd(&cmd);
-    knob_cmd_append(&cmd,"./src/labX_entrypoint.c",);
+    knob_cmd_append(&cmd,"./src/lab3.1_entrypoint.c",);
     knob_cmd_append(&cmd, "-o", "./Deployment/game.exe");
     if (!knob_cmd_run_sync(cmd)) knob_return_defer(false);
     // Ajouter pour chaque labo:
